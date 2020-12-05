@@ -1,0 +1,112 @@
+/* Reset CSS */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* code here */
+
+body {
+  background: url(images/background.jpg);
+  background-size: cover;
+  background-position: center;
+  font-family: Helvetica;
+}
+
+main {
+  max-width: 600px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+main img {
+  width: 100%;
+}
+
+main > div {
+  background: rgba(255, 255, 255, 0.7);
+  margin: 20px 0;
+  padding: 20px;
+}
+
+main >div:nth-of-type(1) {
+  border: 10px solid black;
+}
+
+h1 {
+  font-size: 40px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+p {
+  font-size: 20px;
+}
+
+h2 {
+  font-size: 30px;
+  font-weight: normal;
+  margin-bottom: 20px;
+}
+
+/* Form */
+form {
+  width: 55%;
+  margin: 20px auto 0;
+  text-align: left;
+}
+
+label, input, button {
+  display: block;
+  width: 100%;
+}
+
+label, button {
+  background: #333333;
+  color: white;
+}
+
+label {
+  padding: 5px;
+  font-size: 11px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+input, button {
+  font-style: italic;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  padding: 5px;
+  margin-bottom: 10px;
+  border: none;
+}
+input:focus {
+  outline: none;
+}
+button {
+  cursor: pointer;
+}
+
+footer {
+  width: 100%;
+  line-height: 50px;
+  color: white;
+  font-size: 20px;
+}
+
+/* Responsive under 600px */
+@media screen and (max-width: 600px) {
+  
+  main {
+    width: 100%;
+    padding: 20px;
+  }
+  form {
+    width: 100%;
+  }
+  input, button {
+    font-size: 16px;
+  }
+}
